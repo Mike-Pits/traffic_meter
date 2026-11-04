@@ -22,6 +22,15 @@ python traffic_meter.py
 
 On a minimal Ubuntu install you may need: `sudo apt install libegl1 libgl1 libxkbcommon0`.
 
+## One-click launcher (start on click)
+
+Run the installer once; afterwards launch "Traffic meter" like any app.
+
+- **Windows 11:** double-click `launchers\windows_install.bat`, then search "Traffic meter" in Start (right-click to pin to taskbar).
+- **Ubuntu:** `bash launchers/ubuntu_install.sh`, then search "Traffic meter" in Activities (right-click to add to favorites).
+
+Nothing starts automatically at login.
+
 ## How "Direct" is calculated
 
 While a VPN is connected, its encrypted packets also pass through the physical adapter. The widget subtracts the VPN rate from the physical rate, so Direct is an approximation of traffic outside the tunnel.
